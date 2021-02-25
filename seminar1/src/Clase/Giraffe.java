@@ -1,5 +1,19 @@
 package Clase;
 
-public class Giraffe {
+public class Giraffe extends Animal{
+	private int inaltime;
+	
+	public Giraffe(String name)
+	{
+		super(name);
+		this.inaltime=200;
+	}
+	public Giraffe(String name)
+	{
+		super(name);
+		this.inaltime=inaltime;
+	}
+	
+	
 
 }

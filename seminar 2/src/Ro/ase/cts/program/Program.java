@@ -9,19 +9,17 @@ import java.io.FileNotFoundException;
 import java.util.List;
 
 
-
 public class Program {
 
 	public static void main(String[] args) {
 		List<Aplicant> listaAplicanti;
 		try {
-			listaAplicanti = EmployeeReader.readAngajati("angajati.txt");
+			listaAplicanti = UniversalReader.readAplicant(new PupilReader("elevi.txt"));
+			
 			for(Aplicant aplicant:listaAplicanti)
 				System.out.println(aplicant.toString());
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	}
-
-}
+	}}

@@ -11,10 +11,19 @@ import Ro.ase.cts.Clase.Student;
 import Ro.ase.cts.Clase.Aplicant;
 
 
-public class StudentReader {
+public class StudentReader extends Reader {
 	
-	public static List<Aplicant> readStudents(String file) throws FileNotFoundException, NumberFormatException {
-		Scanner input = new Scanner(new File(file));
+	
+	
+	public StudentReader(String fileName) {
+		super(fileName);
+	
+	}
+
+	public List<Aplicant> readAplicants() throws FileNotFoundException, NumberFormatException {
+		
+		
+		Scanner input = new Scanner(new File(super.fileName));
 		input.useDelimiter(",|\n");
 		List<Aplicant> studenti = new ArrayList<Aplicant>();
 
@@ -37,4 +46,3 @@ public class StudentReader {
 	}
 
 }
-

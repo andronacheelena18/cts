@@ -14,7 +14,7 @@ public class Program {
 	public static void main(String[] args) {
 		List<Aplicant> listaAplicanti;
 		try {
-			listaAplicanti = UniversalReader.readAplicant(new PupilReader("elevi.txt"));
+			listaAplicanti = UniversalReader.readAplicant(new EmployeeReader("angajati.txt"));
 			
 			for(Aplicant aplicant:listaAplicanti)
 				System.out.println(aplicant.toString());

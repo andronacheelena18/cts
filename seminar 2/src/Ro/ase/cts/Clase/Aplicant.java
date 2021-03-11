@@ -36,7 +36,7 @@ public abstract class Aplicant{
 		str.append("Aplicantul").append(nume).append(" ").append(prenume);
 		boolean esteAcceptat=p.getPragAcceptare()>punctaj;
 		str.append(esteAcceptat? "a fost acceptat":"nu a fost acceptat");
-		
+		System.out.println(str.toString());
 			
 		}
 	public int getPunctaj() {

@@ -51,5 +51,11 @@ public class Angajat extends Aplicant{
 		return suma;
 	}
 	
+	public static float getSuma() {
+		return suma;
+	}
+	public static void setSuma(float suma) {
+		Angajat.suma = suma;
+	}
 	
 }

@@ -44,10 +44,18 @@ public class Elev extends Aplicant{
 		System.out.println("Elevul "+getNume()+" "+getPrenume()+" primeste"+s+" Euro/zi in proiect.");
 		return s;
 	}
-
+@Override
 	public float getSumaFinantata() {
 		
 		return suma;
 	}
+	
+	public static float getSuma() {
+		return suma;
+	}
+	public static void setSuma(float suma) {
+		Elev.suma = suma;
+	}
+	
 	
 }

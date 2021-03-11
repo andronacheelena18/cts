@@ -15,6 +15,7 @@ public class Program {
 	public static void main(String[] args) {
 		
 		System.out.println (Student.getSuma());
+		System.out.println (Angajat.getSuma());
 		
 		List<Aplicant> listaAplicanti;
 		try {

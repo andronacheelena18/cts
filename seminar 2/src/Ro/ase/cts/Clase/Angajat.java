@@ -6,6 +6,8 @@ public class Angajat extends Aplicant{
 	private String ocupatie;
 	private int salariu;
 	
+	private static float suma=10;
+	
 	public String getOcupatie() {
 		return ocupatie;
 	}
@@ -43,5 +45,11 @@ public class Angajat extends Aplicant{
 		System.out.println("Angajatul "+getNume()+" "+getPrenume()+" primeste"+s+" Euro/zi in proiect.");
 		return s;
 	}
+	@Override
+	public float getSumaFinantata() {
+		// TODO Auto-generated method stub
+		return suma;
+	}
+	
 	
 }

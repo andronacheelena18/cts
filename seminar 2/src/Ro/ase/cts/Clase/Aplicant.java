@@ -29,11 +29,15 @@ public abstract class Aplicant{
 	public void setVarsta(int varsta) {
 		this.varsta = varsta;
 	}
-	public void statut(){
-		if(punctaj>80)
-			System.out.println("Aplicantul "+nume+" "+prenume+" a fost acceptat.");
-		else
-			System.out.println("Aplicantul "+nume+" "+prenume+" nu a fost acceptat.");
+	
+	
+	public void AfisareStatusProiect( proiect p){
+		StringBuilder str=new StringBuilder();
+		str.append("Aplicantul").append(nume).append(" ").append(prenume);
+		boolean esteAcceptat=p.getPragAcceptare()>punctaj;
+		str.append(esteAcceptat? "a fost acceptat":"nu a fost acceptat");
+		
+			
 		}
 	public int getPunctaj() {
 		return punctaj;

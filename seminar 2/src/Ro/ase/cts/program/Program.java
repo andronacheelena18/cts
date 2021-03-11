@@ -1,5 +1,6 @@
 package Ro.ase.cts.program;
  import Ro.ase.cts.Clase.UniversalReader;
+import Ro.ase.cts.Clase.proiect;
 import Ro.ase.cts.Clase.Angajat;
 import Ro.ase.cts.Clase.Aplicant;
 import Ro.ase.cts.Clase.Student;
@@ -20,11 +21,12 @@ public class Program {
 		List<Aplicant> listaAplicanti;
 		try {
 			listaAplicanti = UniversalReader.readAplicant(new EmployeeReader("angajati.txt"));
-			
+			proiect p=new proiect(80);
 			for(Aplicant aplicant:listaAplicanti)
 			{
 			System.out.print(aplicant.toString());					
 			System.out.println(aplicant.getSumaFinantata());
+			aplicant.AfisareStatusProiect(p);
 			}}
 		catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block

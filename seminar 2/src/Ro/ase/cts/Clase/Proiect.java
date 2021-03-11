@@ -1,6 +1,6 @@
 package Ro.ase.cts.Clase;
 
-public class proiect{
+public class Proiect{
 	
 	private int pragAcceptare;
 
@@ -12,7 +12,7 @@ public class proiect{
 		this.pragAcceptare = pragAcceptare;
 	}
 
-	public proiect(int pragAcceptare) {
+	public Proiect(int pragAcceptare) {
 		super();
 		this.pragAcceptare = pragAcceptare;
 	}

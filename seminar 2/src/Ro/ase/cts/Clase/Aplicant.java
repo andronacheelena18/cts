@@ -31,7 +31,7 @@ public abstract class Aplicant{
 	}
 	
 	
-	public void AfisareStatusProiect( proiect p){
+	public void AfisareStatusProiect( Proiect p){
 		StringBuilder str=new StringBuilder();
 		str.append("Aplicantul").append(nume).append(" ").append(prenume);
 		boolean esteAcceptat=p.getPragAcceptare()>punctaj;
